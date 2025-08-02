@@ -1,0 +1,21 @@
+.advertising-card {
+  width: 300px;
+  height: 343px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img {
+    border-radius: 12px 12px 0 0;
+  }
+  h4 {
+    padding: 20px;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+}

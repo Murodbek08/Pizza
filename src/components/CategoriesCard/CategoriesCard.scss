@@ -1,0 +1,29 @@
+.categories-card {
+  min-width: 135px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  &:hover img {
+    filter: invert(17%) sepia(93%) saturate(7493%) hue-rotate(354deg)
+      brightness(95%) contrast(107%);
+  }
+  &:hover h5 {
+    color: #e23535;
+  }
+  h5 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #191919;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,127 @@
+.korzinka-page-order-card {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  @media screen and (max-width: 580px) {
+    padding: 7px;
+  }
+  @media screen and (max-width: 665px) {
+    max-width: 100%;
+  }
+  .korzinka-page-order-image {
+    border-radius: 8px;
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      @media screen and (max-width: 580px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .korzinka-page-info {
+    max-width: 500px;
+    width: 100%;
+    text-align: start;
+    h4 {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+      font-style: Semi Bold;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: #191919;
+      @media screen and (max-width: 580px) {
+        font-size: 16px;
+      }
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-top: 8px;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: #191919;
+      @media screen and (max-width: 580px) {
+        font-size: 12px;
+        padding-top: 0;
+      }
+    }
+  }
+  .korzinka-page-price {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 665px) {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
+      max-width: 70px;
+    }
+    .korzinka-page-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      background-color: #ffeee2;
+      border-radius: 6px;
+      button {
+        font-size: 18px;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        color: #ff7010;
+        @media screen and (max-width: 580px) {
+          font-size: 16px;
+          padding: 7px;
+        }
+      }
+      span {
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: #ff7010;
+      }
+    }
+    span {
+      text-wrap: nowrap;
+      font-weight: 600;
+      font-style: Semi Bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: right;
+      vertical-align: middle;
+      color: #ff7010;
+    }
+  }
+}

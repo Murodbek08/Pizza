@@ -1,0 +1,109 @@
+footer {
+  padding: 32px 0;
+  background-color: #ffffff;
+  .footer-contents {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 921px) {
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        span {
+          text-wrap: nowrap;
+          font-weight: 400;
+          font-style: Semi Bold;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0px;
+          vertical-align: middle;
+          color: #191919;
+        }
+      }
+    }
+    .footer-help,
+    .footer-pizza {
+      h4 {
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: #191919;
+      }
+      ul {
+        padding-top: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          a {
+            text-wrap: nowrap;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: #191919;
+            &:hover {
+              color: #ff7010;
+            }
+          }
+        }
+      }
+    }
+    .footer-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h4 {
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: #191919;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-wrap: nowrap;
+
+        span {
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0px;
+          color: #191919;
+          &:hover {
+            color: #ff7010;
+          }
+        }
+      }
+      .footer-social-media {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  }
+  p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #191919;
+    @media (max-width: 921px) {
+      padding-top: 40px;
+    }
+  }
+}
