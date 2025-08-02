@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { RU } from "../data/RU";
-import { UZ } from "../data/uz";
 import { LanguageContext } from ".";
+import { UZ } from "../data/uz";
+import { RU } from "../data/ru";
 
 const LanguageContextProvider = ({ children }) => {
   const [langType, setLangType] = useState(
@@ -11,7 +11,6 @@ const LanguageContextProvider = ({ children }) => {
 
   const language = { ru: RU, uz: UZ };
 
-  // LangType o‘zgarsa — localStorage yangilanadi
   useEffect(() => {
     localStorage.setItem("language", langType);
   }, [langType]);
